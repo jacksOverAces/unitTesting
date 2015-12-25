@@ -21,5 +21,13 @@ namespace TestProject
             int difference = execute.Subtract(23, 2);
             Assert.AreEqual(21, difference);
         }
+
+        [TestMethod]
+        public void TestMultiplication()
+        {
+            Operations execute = new Operations();
+            int product = execute.Multiplication(2, 3);
+            Assert.AreEqual(6, product);
+        }
     }
 }
