@@ -29,5 +29,13 @@ namespace TestProject
             int product = execute.Multiplication(2, 3);
             Assert.AreEqual(6, product);
         }
+
+        [TestMethod]
+        public void TestFirstNameProperty()
+        {
+            Student student = new Student();
+            student.First = "Jimmy";
+            Assert.AreEqual("Jimmy", student.First);
+        }
     }
 }
