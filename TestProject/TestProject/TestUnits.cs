@@ -37,5 +37,15 @@ namespace TestProject
             student.First = "Jimmy";
             Assert.AreEqual("Jimmy", student.First);
         }
+
+        [TestMethod]
+        public void TestStudentConstructor()
+        {
+            Student student = new Student();
+            string firstName = student.First;
+            Assert.AreEqual("", firstName);
+            string lastName = student.Last;
+            Assert.AreEqual("", lastName);
+        }
     }
 }
