@@ -13,5 +13,13 @@ namespace TestProject
             int result = objecto.Add(3, 4);
             Assert.AreEqual(7, result);
         }
+
+        [TestMethod]
+        public void TestSubtract()
+        {
+            Operations execute = new Operations();
+            int difference = execute.Subtract(23, 2);
+            Assert.AreEqual(21, difference);
+        }
     }
 }
