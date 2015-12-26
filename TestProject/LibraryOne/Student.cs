@@ -11,5 +11,11 @@
             First = "";
             Last = "";
         }
+
+        public Student(string first, string last)
+        {
+            First = first;
+            Last = last;
+        }
     }
 }

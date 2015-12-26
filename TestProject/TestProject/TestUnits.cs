@@ -47,5 +47,15 @@ namespace TestProject
             string lastName = student.Last;
             Assert.AreEqual("", lastName);
         }
+
+        [TestMethod]
+        public void TestOverloadedConstructor()
+        {
+            Student student = new Student("Jane", "Austin");
+            string firstName = student.First;
+            Assert.AreEqual("Jane", firstName);
+            string lastName = student.Last;
+            Assert.AreEqual("Austin", lastName);
+        }
     }
 }
