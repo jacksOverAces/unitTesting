@@ -9,8 +9,8 @@ namespace TestProject
         [TestMethod]
         public void TestAdd()
         {
-            Operations objecto = new Operations();
-            int result = objecto.Add(3, 4);
+            Operations execute = new Operations();
+            int result = execute.Add(3, 4);
             Assert.AreEqual(7, result);
         }
 
