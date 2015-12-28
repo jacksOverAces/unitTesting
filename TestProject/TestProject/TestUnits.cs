@@ -66,5 +66,13 @@ namespace TestProject
             string lastName = student.Last;
             Assert.AreEqual("Austin", lastName);
         }
+
+        [TestMethod]
+        public void TestStudentID()
+        {
+            Student student = new Student("Jim", "Stone", 12345);
+            int studentID = student.ID;
+            Assert.AreEqual(12345, studentID);
+        }
     }
 }
