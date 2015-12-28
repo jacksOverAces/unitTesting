@@ -26,9 +26,18 @@ namespace TestProject
         public void TestMultiplication()
         {
             Operations execute = new Operations();
-            int product = execute.Multiplication(2, 3);
+            int product = execute.Multiply(2, 3);
             Assert.AreEqual(6, product);
         }
+
+        [TestMethod]
+        public void TestDivision()
+        {
+            Operations execute = new Operations();
+            float result = execute.Divide(12, 4);
+            Assert.AreEqual(3, result);
+        }
+
 
         [TestMethod]
         public void TestFirstNameProperty()
