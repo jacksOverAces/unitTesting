@@ -35,5 +35,11 @@
             id = "";
         }
 
+        public Course(string name, string id)
+        {
+            this.name = name;
+            this.id = id;
+        }
+
     }
 }

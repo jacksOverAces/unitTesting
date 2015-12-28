@@ -52,5 +52,15 @@ namespace TestProject
             string courseID = course.ID;
             Assert.AreEqual("", courseID);
         }
+
+        [TestMethod]
+        public void TestOverloadedCourseConstructor()
+        {
+            Course course = new Course("Programming in C#", "CS350");
+            string courseName = course.Name;
+            Assert.AreEqual("Programming in C#", courseName);
+            string courseID = course.ID;
+            Assert.AreEqual("CS350", courseID);
+        }
     }
 }
