@@ -62,5 +62,15 @@ namespace TestProject
             string courseID = course.ID;
             Assert.AreEqual("CS350", courseID);
         }
+
+        [TestMethod]
+        public void TestInstructorConstructor()
+        {
+            Instructor instructor = new Instructor();
+            string name = instructor.Name;
+            Assert.AreEqual("", name);
+            string id = instructor.ID;
+            Assert.AreEqual("", id);
+        }
     }
 }
