@@ -42,5 +42,15 @@ namespace TestProject
             int studentID = student.ID;
             Assert.AreEqual(12345, studentID);
         }
+
+        [TestMethod]
+        public void TestCourseConstructor()
+        {
+            Course course = new Course();
+            string courseName = course.Name;
+            Assert.AreEqual("", courseName);
+            string courseID = course.ID;
+            Assert.AreEqual("", courseID);
+        }
     }
 }
