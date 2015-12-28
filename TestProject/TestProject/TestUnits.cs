@@ -6,38 +6,6 @@ namespace TestProject
     [TestClass]
     public class TestUnits
     {
-        [TestMethod]
-        public void TestAdd()
-        {
-            Operations execute = new Operations();
-            int result = execute.Add(3, 4);
-            Assert.AreEqual(7, result);
-        }
-
-        [TestMethod]
-        public void TestSubtract()
-        {
-            Operations execute = new Operations();
-            int difference = execute.Subtract(23, 2);
-            Assert.AreEqual(21, difference);
-        }
-
-        [TestMethod]
-        public void TestMultiplication()
-        {
-            Operations execute = new Operations();
-            int product = execute.Multiply(2, 3);
-            Assert.AreEqual(6, product);
-        }
-
-        [TestMethod]
-        public void TestDivision()
-        {
-            Operations execute = new Operations();
-            float result = execute.Divide(12, 4);
-            Assert.AreEqual(3, result);
-        }
-
 
         [TestMethod]
         public void TestFirstNameProperty()
