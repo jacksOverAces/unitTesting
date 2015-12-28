@@ -12,9 +12,14 @@
             return a - b;
         }
 
-        public int Multiplication(int a, int b)
+        public int Multiply(int a, int b)
         {
             return a * b;
+        }
+
+        public float Divide(int a, int b)
+        {
+            return a / b;
         }
     }
 }
